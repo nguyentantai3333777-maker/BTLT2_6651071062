@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Tạo form và các điều khiển trên form</title>
+    <script>
+        function xuLyDongY() {
+            var maUser = document.getElementById("txtUser").value;
+            document.getElementById("lblResult").innerText = maUser;
+        }
+    </script>
+</head>
+<body>
+
+    <form id="frmLogin">
+        <table border="1" bordercolor="#800000" bgcolor="#E6F2FF" cellspacing="0" cellpadding="5" align="center">
+            <tr>
+                <th colspan="2">
+                    <h2><font color="#800000">Đăng nhập</font></h2>
+                </th>
+            </tr>
+            <tr>
+                <td>Mã người dùng:</td>
+                <td>
+                    <input type="text" id="txtUser" name="txtUser">
+                </td>
+            </tr>
+            <tr>
+                <td>Mật khẩu:</td>
+                <td>
+                    <input type="password" id="txtPass" name="txtPass">
+                </td>
+            </tr>
+            <tr>
+                <td colspan="2" align="center">
+                    <input type="button" id="btnDongY" value="Đồng ý" onclick="xuLyDongY()">
+                </td>
+            </tr>
+            <tr>
+                <td colspan="2" align="center">
+                    <font color="blue"><div id="lblResult"></div></font>
+                </td>
+            </tr>
+        </table>
+    </form>
+
+</body>
+</html>
